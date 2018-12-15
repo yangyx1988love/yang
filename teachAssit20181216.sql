@@ -11,7 +11,7 @@
  Target Server Version : 100113
  File Encoding         : 65001
 
- Date: 16/12/2018 00:55:14
+ Date: 16/12/2018 01:03:06
 */
 
 SET NAMES utf8mb4;
@@ -28,8 +28,8 @@ CREATE TABLE `course`  (
   `TR_SECTION_ID` int(4) NULL DEFAULT NULL COMMENT '教研室编号',
   `TOTAL_HOURS` int(4) NULL DEFAULT NULL COMMENT '总学时',
   `TEACH_NUM` varchar(8) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '课程审核人',
-  `AVAILABLE` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '0' COMMENT '是否审核通过',
   `AUDIT_TIME` datetime(0) NULL DEFAULT NULL COMMENT '审核时间',
+  `AVAILABLE` varchar(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '0' COMMENT '是否审核通过 1通过',
   PRIMARY KEY (`COURSE_ID`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
